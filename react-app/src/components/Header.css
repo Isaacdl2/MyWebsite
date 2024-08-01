@@ -1,19 +1,37 @@
-/* Header.css */
-
-/* Make sure the header stays at the top */
 .header {
-  position: fixed; /* Fix the header at the top of the page */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #282c34; /* Dark background for the banner */
+  background-color: #606060;
   color: white;
-  padding: 10px 20px; /* Padding for spacing */
-  z-index: 1000; /* Ensure it stays above other content */
+  padding: 10px; /* Padding inside the taskbar */
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  left: 12px; /* 10-pixel margin from the left */
+  right: 29px;
+
+  z-index: 1000; /* Ensure it's above other content */
+  box-sizing: border-box; /* Include padding in width calculation */
+  height: 60px; /* Set the height of the taskbar */
   display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: flex-end; /* Center content horizontally */
 }
 
-/* Style for the banner inside the header */
-.banner {
-  text-align: center; /* Center the text */
+.header-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin: 0 25px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
 }
