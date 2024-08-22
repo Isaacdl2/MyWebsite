@@ -1,18 +1,18 @@
 .header {
   background-color: #606060;
   color: white;
-  padding: 10px; /* Padding inside the taskbar */
-  position: fixed; /* Fixed position at the top */
+  padding: 10px;
+  position: fixed;
   top: 0;
-  left: 12px; /* 10-pixel margin from the left */
-  right: 29px;
+  left: 12px;
+  right: 27.5px;
 
-  z-index: 1000; /* Ensure it's above other content */
-  box-sizing: border-box; /* Include padding in width calculation */
-  height: 60px; /* Set the height of the taskbar */
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 60px;
   display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: flex-end; /* Center content horizontally */
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header-nav {

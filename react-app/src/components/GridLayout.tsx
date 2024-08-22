@@ -4,11 +4,12 @@ function GridLayout() {
   return (
     <div className="container">
       <div className="square-1">
-        <h2>Square 1</h2>
-        <p>Content for top left corner.</p>
+        <h2>Isaac D. Larson</h2>
       </div>
       <div className="square-2">
-        <h2>Square 2</h2>
+        <div className="photo">
+          <img src="/images/myImage.jpg"></img>
+        </div>
       </div>
       <div className="square-3">
         <h2>Square 3</h2>
@@ -19,6 +20,10 @@ function GridLayout() {
         <p>Content for bottom right corner.</p>
       </div>
       <div className="square-5">
+        <h2>Square 5</h2>
+        <p>Content for bottom right corner.</p>
+      </div>
+      <div className="square-6">
         <h2>Square 5</h2>
         <p>Content for bottom right corner.</p>
       </div>
