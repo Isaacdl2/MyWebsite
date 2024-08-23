@@ -1,14 +1,17 @@
 import "./GridLayout.css";
+import ButtonSection from "./ButtonSection";
 
 function GridLayout() {
   return (
     <div className="container">
       <div className="square-1">
         <h2>Isaac D. Larson</h2>
+        <div className="line"></div>
+        <ButtonSection></ButtonSection>
       </div>
       <div className="square-2">
         <div className="photo">
-          <img src="/images/myImage.jpg"></img>
+          <img src="/images/myImage.png"></img>
         </div>
       </div>
       <div className="square-3">

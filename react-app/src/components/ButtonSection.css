@@ -1,0 +1,39 @@
+.button-section {
+  margin-top: 2rem; /* Space between the line and buttons */
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center; /* Center buttons horizontally */
+}
+
+.download-button,
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  font-size: 1rem; /* Responsive font size */
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 10px; /* Space between buttons and line */
+  width: auto; /* Allow width to adjust based on content */
+  max-width: 160px; /* Optional: limit maximum width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.download-button i,
+.contact-button i {
+  margin-right: 8px;
+}
+
+.download-button:hover,
+.contact-button:hover {
+  border-color: #0056b3;
+}

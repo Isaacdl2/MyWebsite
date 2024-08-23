@@ -1,3 +1,4 @@
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import GridLayout from "./components/GridLayout";
 import Header from "./components/Header";
 

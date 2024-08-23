@@ -14,41 +14,59 @@ body {
   height: 200vh;
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.5fr 1fr 1fr 1fr 1fr 1.3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "square-1 square-1 square-2 square-2"
-    "square-3 square-3 square-3 square-3"
-    "square-4 square-4 square-4 square-4"
-    "square-4 square-4 square-4 square-4"
-    "square-5 square-5 square-5 square-5"
-    "square-5 square-5 square-5 square-5"
-    "square-6 square-6 square-6 square-6";
+    "square-1 square-1 square-2 square-2 square-2"
+    "square-3 square-3 square-3 square-3 square-3"
+    "square-4 square-4 square-4 square-4 square-4"
+    "square-4 square-4 square-4 square-4 square-4"
+    "square-5 square-5 square-5 square-5 square-5"
+    "square-5 square-5 square-5 square-5 square-5"
+    "square-6 square-6 square-6 square-6 square-6";
 
   max-width: None;
 }
 
 .square-1 {
   grid-area: square-1;
-  background-color: lightcoral;
+  background-color: #d6fbfd;
   padding: 20px;
+  position: relative; /* Ensure child elements are positioned relative to this container */
+  text-align: center; /* Center align text and child elements */
 }
 
 .square-1 h2 {
-  text-align: center;
+  padding-top: 2rem; /* Padding between heading and line */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4vw; /* Responsive font size */
+  margin: 0; /* Remove default margin */
+}
+
+.line {
+  width: 50%; /* Responsive width */
+  height: 2px;
+  background-color: black;
+  margin: 2rem auto; /* Center horizontally and space from heading */
+  max-width: 300px; /* Optional: limit maximum width */
+  display: block; /* Block-level element to respect width and margin settings */
 }
 
 .square-2 {
   grid-area: square-2;
   background-color: lightyellow;
+  position: relative; /* Relative positioning for the child image */
+  overflow: hidden; /* Ensures that any overflow of the image is hidden */
 }
 
+/* Image Styling */
 .square-2 img {
-  position: realtive;
+  position: absolute; /* Absolute positioning to cover the container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
 }
 
 .square-3 {
@@ -73,4 +91,19 @@ body {
   grid-area: square-6;
   background-color: aquamarine;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 10px;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "square-1"
+      "square-2"
+      "square-3"
+      "square-4"
+      "square-5"
+      "square-6";
+  }
 }
