@@ -14,12 +14,12 @@ body {
   height: 200vh;
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.6fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "square-1 square-1 square-2 square-2 square-2"
     "square-3 square-3 square-3 square-3 square-3"
-    "square-4 square-4 square-4 square-4 square-4"
+    "square-3 square-3 square-3 square-3 square-3"
     "square-4 square-4 square-4 square-4 square-4"
     "square-5 square-5 square-5 square-5 square-5"
     "square-5 square-5 square-5 square-5 square-5"
@@ -30,7 +30,7 @@ body {
 
 .square-1 {
   grid-area: square-1;
-  background-color: #d6fbfd;
+  background-color: #b7b09c;
   padding: 20px;
   position: relative; /* Ensure child elements are positioned relative to this container */
   text-align: center; /* Center align text and child elements */
@@ -38,23 +38,32 @@ body {
 
 .square-1 h2 {
   padding-top: 2rem; /* Padding between heading and line */
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 4vw; /* Responsive font size */
+  font: roboto;
+  font-size: 3.5vw; /* Responsive font size */
   margin: 0; /* Remove default margin */
 }
 
+.content {
+  margin-top: 0.8rem; /* Space between the header and content */
+}
+
+.text-above-line {
+  margin-bottom: 1rem; /* Space between text and line */
+  font: roboto;
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
 .line {
-  width: 50%; /* Responsive width */
+  width: 30%; /* Responsive width */
   height: 2px;
   background-color: black;
   margin: 2rem auto; /* Center horizontally and space from heading */
-  max-width: 300px; /* Optional: limit maximum width */
   display: block; /* Block-level element to respect width and margin settings */
 }
 
 .square-2 {
   grid-area: square-2;
-  background-color: lightyellow;
+  background-color: #b7b09c;
   position: relative; /* Relative positioning for the child image */
   overflow: hidden; /* Ensures that any overflow of the image is hidden */
 }
@@ -67,34 +76,65 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensures the image covers the container */
+  border: 5px solid #b7b09c;
 }
 
 .square-3 {
+  border: 5px solid #b7b09c;
+  background-image: url("/images/newimage.png");
+  background-position: center;
   grid-area: square-3;
-  background-color: lightblue;
-  padding: 20px;
+  background-color: #b7b09c;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.square-3 h2 {
+  position: relative;
+  font: roboto;
+  font-size: 3.5vw; /* Responsive font size */
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.square-3 p {
+  font: roboto;
+  font-size: 1.7vw;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.line2 {
+  width: 10%;
+  height: 2px;
+  background-color: black;
+  display: block;
+  margin: 2rem auto;
 }
 
 .square-4 {
   grid-area: square-4;
-  background-color: lightseagreen;
+  background-color: #b7b09c;
   padding: 20px;
 }
 
 .square-5 {
   grid-area: square-5;
-  background-color: lightgray;
+  background-color: #b7b09c;
   padding: 20px;
 }
 
 .square-6 {
   grid-area: square-6;
-  background-color: aquamarine;
+  background-color: #b7b09c;
   padding: 20px;
 }
 
 @media (max-width: 768px) {
   .container {
+    display: grid;
+    height: 300vh;
     margin-top: 10px;
     grid-template-columns: 1fr; /* Single column layout for mobile */
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -105,5 +145,12 @@ body {
       "square-4"
       "square-5"
       "square-6";
+  }
+
+  .square-1 h2 {
+    padding-top: 2rem; /* Padding between heading and line */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8vw; /* Responsive font size */
+    margin: 0; /* Remove default margin */
   }
 }

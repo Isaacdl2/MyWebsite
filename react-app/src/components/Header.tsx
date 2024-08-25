@@ -3,6 +3,10 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
+      <div className="header-left">
+        {/*<img src="/images/UA-LOGO.png" className="logo" /> */}
+        <span className="header-text">Developer</span>
+      </div>
       <nav>
         <ul className="header-nav">
           <li>
