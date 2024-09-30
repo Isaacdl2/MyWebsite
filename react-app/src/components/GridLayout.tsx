@@ -29,10 +29,6 @@ function GridLayout() {
           to make a lasting impact.
         </p>
       </div>
-      <div className="square-4">
-        <h2>Resume</h2>
-        <div className="line3"></div>
-      </div>
       <div className="square-5">
         <div className="photo">
           <img src="/images/prjImg.png"></img>
@@ -46,7 +42,7 @@ function GridLayout() {
             <img src="/images/work.png" alt="logo" />
             Work Experience
           </h1>
-          <div className="line3"></div>
+          <div className="line4"></div>
         </div>
         <div className="worksquare-2">
           <h3>Software Developer Intern - Aspera Satellite</h3>
@@ -62,8 +58,17 @@ function GridLayout() {
               Read more...
             </a>
           </p>
+          <div className="tags">
+            <span className="tag">Python</span>
+            <span className="tag">SpiceyPy</span>
+            <span className="tag">Testing</span>
+          </div>
         </div>
+
         <div className="worksquare-3">
+          <img src="/images/aspera_Cropped.png"></img>
+        </div>
+        <div className="worksquare-4">
           <h3>Technical Consultant - University of Arizona</h3>
           <p>
             Provided IT support to students and faculty at the University of
@@ -71,30 +76,52 @@ function GridLayout() {
             teams to promote efficient use of technology resources across the
             university.
           </p>
+          <div className="tags">
+            <span className="tag">Technical Troubleshooting</span>
+            <span className="tag">Customer Service</span>
+            <span className="tag">Problem Solving</span>
+            <span className="tag">Collaboration</span>
+          </div>
         </div>
-        <div className="worksquare-4">
+        <div className="worksquare-5">
           <h3>Math Tutor - Horizon High School</h3>
           <p>
             Provided one-on-one tutoring for students outside of class at
             Horizon High School, helping them improve their understanding of
             mathematical concepts and enhance their problem-solving skills.
           </p>
+          <div className="tags">
+            <span className="tag">Mentorship</span>
+            <span className="tag">Communication</span>
+            <span className="tag">Problem Solving</span>
+          </div>
         </div>
-        <div className="worksquare-5">
+        <div className="worksquare-6">
           <h3>Assistant Youth Wrestling Coach - NPWC</h3>
           <p>
             Assisted in coaching youth wrestlers at North Phoenix Wrestling
             Club, providing instruction on techniques, fostering teamwork, and
             promoting sportsmanship among athletes.
           </p>
+          <div className="tags">
+            <span className="tag">Leadership</span>
+            <span className="tag">Teamwork</span>
+            <span className="tag">Adaptability</span>
+            <span className="tag">Communication</span>
+          </div>
         </div>
-        <div className="worksquare-6">
+        <div className="worksquare-7">
           <h3>Barista - Dunkin'</h3>
           <p>
             Prepared and served a variety of beverages and food items at
             Dunkin', delivering exceptional customer service while maintaining a
             clean and efficient workspace.
           </p>
+          <div className="tags">
+            <span className="tag">Customer Service</span>
+            <span className="tag">Multitasking</span>
+            <span className="tag">Efficiency</span>
+          </div>
         </div>
       </div>
     </div>

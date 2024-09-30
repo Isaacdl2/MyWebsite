@@ -15,12 +15,12 @@ body {
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.3fr 1fr 1fr 2fr;
+  grid-template-rows: 0.8fr 0.5fr 0.5fr 0.3fr 1fr 1fr 2fr;
   grid-template-areas:
     "square-1 square-1 square-1 square-1 square-2 square-2 square-2 square-2 square-2 square-2"
     "square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3"
     "square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3"
-    "square-4 square-4 square-4 square-4 square-4 square-4 square-4 square-4 square-4 square-4"
+    "square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6"
     "square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6"
     "square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6"
     "square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5";
@@ -118,28 +118,6 @@ body {
   margin: 2rem auto;
 }
 
-.square-4 {
-  grid-area: square-4;
-  background-color: #b7b09c;
-  padding: 20px;
-}
-
-.square-4 h2 {
-  position: relative;
-  font: roboto;
-  font-size: 3.5vw; /* Responsive font size */
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.line3 {
-  width: 10%;
-  height: 2px;
-  background-color: black;
-  display: block;
-  margin: 2rem auto;
-}
-
 .square-5 {
   grid-area: square-5;
   background-color: #b7b09c;
@@ -173,6 +151,7 @@ body {
 
 .worksquare-1 {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex; /* Use Flexbox for layout */
   flex-direction: column; /* Align items vertically */
   align-items: center; /* Center items horizontally */
@@ -204,6 +183,17 @@ body {
 
 .worksquare-3 {
   grid-area: worksquare-3;
+  position: relative; /* Relative positioning for the child image */
+  overflow: hidden; /* Ensures that any overflow of the image is hidden */
+}
+
+.worksquare-3 img {
+  position: absolute; /* Absolute positioning to cover the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
 }
 
 .worksquare-4 {
@@ -218,11 +208,16 @@ body {
   grid-area: worksquare-6;
 }
 
+.worksquare-7 {
+  grid-area: worksquare-7;
+}
+
 .worksquare-2,
 .worksquare-3,
 .worksquare-4,
 .worksquare-5,
-.worksquare-6 {
+.worksquare-6,
+.worksquare-7 {
   margin: 15px 15px; /* Add vertical space (top and bottom) between cards */
   padding: 15px; /* Optional: Add padding inside the card for better aesthetics */
   background-color: #f9f9f9; /* Optional: Add a background color */
@@ -237,6 +232,35 @@ body {
 
 .square-6 p {
   font-size: 1.5vw;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: right;
+  gap: 10px; /* Adds space between logos */
+  margin-top: 10px; /* Adds space between the text and the logos */
+}
+
+.logo-container img {
+  width: 4rem; /* Adjust logo size as needed */
+  height: auto;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-start; /* Align tags to the left */
+  flex-wrap: wrap; /* Allow tags to wrap to the next line if needed */
+  margin-top: auto; /* Pushes the tags to the bottom */
+  gap: 10px; /* Space between tags */
+}
+
+.tag {
+  background-color: #ddd; /* Tag background */
+  color: #333; /* Text color */
+  padding: 0.4rem 0.8rem; /* Padding inside the tags */
+  border-radius: 12px; /* Rounded corners for tags */
+  font-size: 0.85rem; /* Adjust tag font size */
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
