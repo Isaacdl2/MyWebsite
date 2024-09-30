@@ -49,13 +49,10 @@ function GridLayout() {
           </div>
         </div>
         <div className="projsquare-3">
-          <h3>Barbershop Website</h3>
-          <p>
-            Designed a website for my friend that's a barber.
-            stylistmicahmadson.com
-          </p>
+          <h3>Barbershop Landing Page</h3>
+          <p>Coming Soon . . .</p>
           <div className="tags">
-            <span className="tag">Reactx</span>
+            <span className="tag">React</span>
             <span className="tag">Typescript</span>
             <span className="tag">Bootstrap</span>
           </div>
@@ -89,6 +86,8 @@ function GridLayout() {
             <span className="tag">SpiceyPy</span>
             <span className="tag">Testing</span>
           </div>
+          <img src="/images/ascending_node_logo.png" alt="logo" />
+          <img src="/images/nasa_logo.png" alt="logo" />
         </div>
         <div className="worksquare-3">
           <img src="/images/aspera_Cropped.png"></img>
@@ -107,6 +106,8 @@ function GridLayout() {
             <span className="tag">Problem Solving</span>
             <span className="tag">Collaboration</span>
           </div>
+          <img src="/images/UA-LOGO.png" alt="logo" />
+          <img src="/images/uits.jpg" alt="logo" />
         </div>
         <div className="worksquare-5">
           <h3>Math Tutor - Horizon High School</h3>
@@ -120,6 +121,8 @@ function GridLayout() {
             <span className="tag">Communication</span>
             <span className="tag">Problem Solving</span>
           </div>
+          <img src="/images/horizon_high_h.png" alt="logo" />
+          <img src="/images/horizon_high_dog.png" alt="logo" />
         </div>
         <div className="worksquare-6">
           <h3>Assistant Youth Wrestling Coach - NPWC</h3>
@@ -147,6 +150,7 @@ function GridLayout() {
             <span className="tag">Multitasking</span>
             <span className="tag">Efficiency</span>
           </div>
+          <img src="/images/dunkin_logo.png" alt="logo" />
         </div>
       </div>
     </div>

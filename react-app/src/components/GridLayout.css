@@ -11,11 +11,11 @@ body {
   max-width: 100vw !important;
   margin-top: 70px;
   margin-bottom: 10px;
-  height: 380vh;
+  height: 420vh;
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 0.35fr 0.35fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "square-1 square-1 square-1 square-1 square-2 square-2 square-2 square-2 square-2 square-2"
     "square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3"
@@ -149,6 +149,15 @@ body {
     "worksquare-6 worksquare-6 worksquare-7 worksquare-7";
 }
 
+.square-6 h3 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.square-6 p {
+  font-size: 1.5vw;
+}
+
 .worksquare-1 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -163,13 +172,6 @@ body {
   font-size: 3.5vw;
 }
 
-.line4 {
-  width: 10%; /* Adjust the width as needed */
-  height: 2px; /* Thickness of the line */
-  background-color: #333; /* Color of the line */
-  margin: 2rem auto; /* Center the line and add space above/below */
-}
-
 .worksquare-1 img {
   width: 3rem;
   height: 3rem;
@@ -177,8 +179,21 @@ body {
   margin-right: 1rem;
 }
 
+.line4 {
+  width: 10%; /* Adjust the width as needed */
+  height: 2px; /* Thickness of the line */
+  background-color: #333; /* Color of the line */
+  margin: 2rem auto; /* Center the line and add space above/below */
+}
+
 .worksquare-2 {
   grid-area: worksquare-2;
+}
+
+.worksquare-2 img {
+  width: 4.5rem;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .worksquare-3 {
@@ -225,13 +240,13 @@ body {
   border-radius: 10px; /* Optional: Round the corners */
 }
 
-.square-6 h3 {
-  font-size: 2vw;
-  font-weight: 600;
-}
-
-.square-6 p {
-  font-size: 1.5vw;
+.worksquare-4 img,
+.worksquare-5 img,
+.worksquare-7 img {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 4rem; /* Adjust logo size as needed */
+  height: auto;
 }
 
 .square-5 {
@@ -249,6 +264,17 @@ body {
     "projsquare-6 projsquare-6 projsquare-7 projsquare-7";
 }
 
+.square-5 h3 {
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: left;
+}
+
+.square-5 p {
+  font-size: 1.5vw;
+  text-align: left;
+}
+
 .projsquare-1 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -257,6 +283,13 @@ body {
   align-items: center; /* Center items horizontally */
   text-align: center; /* Center text within the header */
   grid-area: projsquare-1; /* Ensure this is in the grid area */
+}
+
+.projsquare-1 img {
+  width: 3rem;
+  height: 3rem;
+  padding-bottom: 10px;
+  margin-right: 1rem;
 }
 
 .projsquare-1 h1 {
@@ -268,13 +301,6 @@ body {
   height: 2px; /* Thickness of the line */
   background-color: #333; /* Color of the line */
   margin: 2rem auto; /* Center the line and add space above/below */
-}
-
-.projsquare-1 img {
-  width: 3rem;
-  height: 3rem;
-  padding-bottom: 10px;
-  margin-right: 1rem;
 }
 
 .projsquare-2 {
@@ -309,29 +335,6 @@ body {
   background-color: #f9f9f9; /* Optional: Add a background color */
   border: 3px solid black; /* Optional: Add a border to the card */
   border-radius: 10px; /* Optional: Round the corners */
-}
-
-.square-5 h3 {
-  font-size: 2vw;
-  font-weight: 600;
-  text-align: left;
-}
-
-.square-5 p {
-  font-size: 1.5vw;
-  text-align: left;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: right;
-  gap: 10px; /* Adds space between logos */
-  margin-top: 10px; /* Adds space between the text and the logos */
-}
-
-.logo-container img {
-  width: 4rem; /* Adjust logo size as needed */
-  height: auto;
 }
 
 .tags {
