@@ -30,12 +30,38 @@ function GridLayout() {
         </p>
       </div>
       <div className="square-5">
-        <div className="photo">
-          <img src="/images/prjImg.png"></img>
+        <div className="projsquare-1">
+          <h1>
+            <img src="/images/prjImg.png" alt="logo" />
+            Projects
+          </h1>
+          <div className="line5"></div>
         </div>
-        <h2>Projects</h2>
-        <p>Content for bottom right corner.</p>
+        <div className="projsquare-2">
+          <h3>My Portfolio</h3>
+          <p>
+            Designed responsive eportfolio website that I continue to update!
+          </p>
+          <div className="tags">
+            <span className="tag">React</span>
+            <span className="tag">Typescript</span>
+            <span className="tag">Bootstrap</span>
+          </div>
+        </div>
+        <div className="projsquare-3">
+          <h3>Barbershop Website</h3>
+          <p>
+            Designed a website for my friend that's a barber.
+            stylistmicahmadson.com
+          </p>
+          <div className="tags">
+            <span className="tag">Reactx</span>
+            <span className="tag">Typescript</span>
+            <span className="tag">Bootstrap</span>
+          </div>
+        </div>
       </div>
+
       <div className="square-6">
         <div className="worksquare-1">
           <h1>
@@ -64,7 +90,6 @@ function GridLayout() {
             <span className="tag">Testing</span>
           </div>
         </div>
-
         <div className="worksquare-3">
           <img src="/images/aspera_Cropped.png"></img>
         </div>
