@@ -23,24 +23,79 @@ function GridLayout() {
         <h2>About Me</h2>
         <div className="line2"></div>
         <p>
-          Hi, I’m Isaac! I’m currently pursuing a dual major in Computer Science
-          and Electrical/Computer Engineering at the University of Arizona. My
-          studies have ignited a strong passion in space exploration and
-          artificial intelligence. I am eager to apply my skills and knowledge
-          to innovative projects that push the boundaries of technology.
+          Hi, I’m Isaac! I’m a dual major in Computer Science and Electrical
+          Engineering at the University of Arizona. I’m eager to apply my skills
+          to transformative, cutting-edge technologies that have the potential
+          to make a lasting impact.
         </p>
       </div>
       <div className="square-4">
-        <h2>Square 4</h2>
-        <p>Content for bottom right corner.</p>
+        <h2>Resume</h2>
+        <div className="line3"></div>
       </div>
       <div className="square-5">
-        <h2>Square 5</h2>
+        <div className="photo">
+          <img src="/images/prjImg.png"></img>
+        </div>
+        <h2>Projects</h2>
         <p>Content for bottom right corner.</p>
       </div>
       <div className="square-6">
-        <h2>Square 5</h2>
-        <p>Content for bottom right corner.</p>
+        <div className="worksquare-1">
+          <h1>
+            <img src="/images/work.png" alt="logo" />
+            Work Experience
+          </h1>
+          <div className="line3"></div>
+        </div>
+        <div className="worksquare-2">
+          <h3>Software Developer Intern - Aspera Satellite</h3>
+          <p>
+            Worked on the Aspera satellite as part of the NASA Pioneer Program,
+            collaborating with teams to develop command and lab software that
+            enhances satellite operations.&nbsp;
+            <a
+              href="https://www.nasa.gov/centers-and-facilities/goddard/nasa-selects-4-concepts-for-small-missions-to-study-universes-secrets/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read more...
+            </a>
+          </p>
+        </div>
+        <div className="worksquare-3">
+          <h3>Technical Consultant - University of Arizona</h3>
+          <p>
+            Provided IT support to students and faculty at the University of
+            Arizona, troubleshooting technical issues and colloborating with
+            teams to promote efficient use of technology resources across the
+            university.
+          </p>
+        </div>
+        <div className="worksquare-4">
+          <h3>Math Tutor - Horizon High School</h3>
+          <p>
+            Provided one-on-one tutoring for students outside of class at
+            Horizon High School, helping them improve their understanding of
+            mathematical concepts and enhance their problem-solving skills.
+          </p>
+        </div>
+        <div className="worksquare-5">
+          <h3>Assistant Youth Wrestling Coach - NPWC</h3>
+          <p>
+            Assisted in coaching youth wrestlers at North Phoenix Wrestling
+            Club, providing instruction on techniques, fostering teamwork, and
+            promoting sportsmanship among athletes.
+          </p>
+        </div>
+        <div className="worksquare-6">
+          <h3>Barista - Dunkin'</h3>
+          <p>
+            Prepared and served a variety of beverages and food items at
+            Dunkin', delivering exceptional customer service while maintaining a
+            clean and efficient workspace.
+          </p>
+        </div>
       </div>
     </div>
   );
