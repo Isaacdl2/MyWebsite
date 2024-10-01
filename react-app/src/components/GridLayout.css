@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -357,15 +357,13 @@ body {
 @media (max-width: 768px) {
   .container {
     display: grid;
-    height: 300vh;
+    height: 600vh;
     margin-top: 10px;
     grid-template-columns: 1fr; /* Single column layout for mobile */
-    grid-template-rows: 1fr 1fr 1fr 0.3fr 3fr 2fr;
+    grid-template-rows: 0.1fr 2fr 2fr 1fr;
     grid-template-areas:
       "square-1"
-      "square-2"
       "square-3"
-      "square-4"
       "square-6"
       "square-5";
   }
@@ -377,7 +375,53 @@ body {
     margin: 0; /* Remove default margin */
   }
 
+  .square-3 img {
+    width: 100%; /* Ensure image takes up full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
   .square-3 p {
-    font-size: 3vw;
+    font-size: 1.2rem;
+  }
+
+  .square-6 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "worksquare-1"
+      "worksquare-2"
+      "worksquare-3"
+      "worksquare-4"
+      "worksquare-5"
+      "worksquare-6"
+      "worksquare-7";
+  }
+
+  .square-5 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2 1fr 1fr 1fr;
+    grid-template-areas:
+      "projsquare-1"
+      "projsquare-2"
+      "projsquare-3"
+      "projsquare-4";
+  }
+
+  .square-5 h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .square-5 p {
+    font-size: 1rem;
+  }
+
+  .square-6 h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .square-6 p {
+    font-size: 1rem;
   }
 }

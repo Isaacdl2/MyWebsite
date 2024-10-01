@@ -16,7 +16,7 @@ function GridLayout() {
       </div>
       <div className="square-2">
         <div className="photo">
-          <img src="/images/myImage.png"></img>
+          <img src="/images/myImage.png" alt="me"></img>
         </div>
       </div>
       <div className="square-3">
@@ -57,6 +57,30 @@ function GridLayout() {
             <span className="tag">Bootstrap</span>
           </div>
         </div>
+        <div className="projsquare-4">
+          <h3>Course Coding Projects</h3>
+          <p>
+            My coding projects as University so far! Includes algorithm
+            development, data strucutres, OOP, processing and analyzing large
+            datasets, games, implementing digital circuits and lots more!&nbsp;
+            <a
+              href="https://github.com/Isaacdl2/ClassProjects/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </p>
+          <div className="tags">
+            <span className="tag">Python</span>
+            <span className="tag">C++</span>
+            <span className="tag">Java</span>
+            <span className="tag">Verilog</span>
+          </div>
+        </div>
+        <div className="projsquare-5"></div>
+        <div className="projsquare-6"></div>
+        <div className="projsquare-7"></div>
       </div>
 
       <div className="square-6">
@@ -141,9 +165,9 @@ function GridLayout() {
         <div className="worksquare-7">
           <h3>Barista - Dunkin'</h3>
           <p>
-            Prepared and served a variety of beverages and food items at
-            Dunkin', delivering exceptional customer service while maintaining a
-            clean and efficient workspace.
+            Designed Prepared and served a variety of beverages and food items
+            at Dunkin', delivering exceptional customer service while
+            maintaining a clean and efficient workspace.
           </p>
           <div className="tags">
             <span className="tag">Customer Service</span>
