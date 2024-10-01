@@ -8,14 +8,18 @@ body {
 }
 
 .container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  min-height: 100vh;
   max-width: 100vw !important;
   margin-top: 70px;
   margin-bottom: 10px;
   height: 420vh;
   gap: 10px;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.6fr 0.35fr 0.35fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 420px 200px 200px auto;
+  grid-auto-rows: min-content;
   grid-template-areas:
     "square-1 square-1 square-1 square-1 square-2 square-2 square-2 square-2 square-2 square-2"
     "square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3 square-3"
@@ -24,8 +28,6 @@ body {
     "square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6"
     "square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5"
     "square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5";
-
-  max-width: None;
 }
 
 .square-1 {
@@ -135,6 +137,7 @@ body {
 }
 
 .square-6 {
+  min-height: auto;
   grid-area: square-6;
   background-color: #b7b09c;
   padding: 20px;
@@ -250,6 +253,7 @@ body {
 }
 
 .square-5 {
+  min-height: auto;
   grid-area: square-5;
   background-color: #b7b09c;
   padding: 20px;
@@ -357,10 +361,9 @@ body {
 @media (max-width: 768px) {
   .container {
     display: grid;
-    height: 600vh;
-    margin-top: 10px;
-    grid-template-columns: 1fr; /* Single column layout for mobile */
-    grid-template-rows: 0.1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: min-content;
     grid-template-areas:
       "square-1"
       "square-3"
@@ -375,9 +378,8 @@ body {
     margin: 0; /* Remove default margin */
   }
 
-  .square-3 img {
-    width: 100%; /* Ensure image takes up full width of the container */
-    height: auto; /* Maintain aspect ratio */
+  .square-3 {
+    min-height: 600px;
   }
 
   .square-3 p {
@@ -386,7 +388,7 @@ body {
 
   .square-6 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.08fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.4fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "worksquare-1"
       "worksquare-2"
