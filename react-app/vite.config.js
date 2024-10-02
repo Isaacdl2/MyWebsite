@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: 'dist' // Ensure this is set to 'dist'
   },
 
-  base: "/MyWebsite/",
+  base: "/",
 })
