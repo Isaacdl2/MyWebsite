@@ -1,5 +1,6 @@
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -18,7 +19,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 420px 300px 300px auto;
+  grid-template-rows: 420px 300px 300px auto auto auto auto 380px;
   grid-auto-rows: min-content;
   grid-template-areas:
     "square-1 square-1 square-1 square-1 square-2 square-2 square-2 square-2 square-2 square-2"
@@ -27,7 +28,8 @@ body {
     "square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6"
     "square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6 square-6"
     "square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5"
-    "square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5";
+    "square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5 square-5"
+    "square-4 square-4 square-4 square-4 square-4 square-4 square-4 square-4 square-4 square-4";
 }
 
 .square-1 {
@@ -127,6 +129,14 @@ body {
   text-align: center;
 }
 
+.square-5 h1 {
+  position: relative;
+  font: roboto;
+  font-size: 3.5vw; /* Responsive font size */
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .square-5 h2 {
   margin-top: 3%;
 }
@@ -152,12 +162,22 @@ body {
     "worksquare-6 worksquare-6 worksquare-7 worksquare-7";
 }
 
+.square-6 h1 {
+  position: relative;
+  font: roboto;
+  font-size: 3.5vw; /* Responsive font size */
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .square-6 h3 {
+  font: roboto;
   font-size: 2vw;
   font-weight: 600;
 }
 
 .square-6 p {
+  font: roboto;
   font-size: 1.5vw;
 }
 
@@ -269,12 +289,14 @@ body {
 }
 
 .square-5 h3 {
+  font: roboto;
   font-size: 2vw;
   font-weight: 600;
   text-align: left;
 }
 
 .square-5 p {
+  font: roboto;
   font-size: 1.5vw;
   text-align: left;
 }
@@ -358,8 +380,32 @@ body {
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+.square-4 {
+  grid-area: square-4;
+  background-color: #b7b09c;
+  padding: 20px;
+  position: relative; /* Ensure child elements are positioned relative to this container */
+  text-align: center; /* Center align text and child elements */
+}
+
+.square-4 h2 {
+  position: relative;
+  font: roboto;
+  font-size: 3.5vw; /* Responsive font size */
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.square-4 p {
+  position: relative;
+  font: roboto;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+@media (max-width: 880px) {
   .container {
+    margin-top: 10px;
     column-gap: 0px; /* Keeps the horizontal gap */
     row-gap: 10px; /* Removes vertical gap if needed */
     overflow-x: hidden;
@@ -371,7 +417,8 @@ body {
       "square-1"
       "square-3"
       "square-6"
-      "square-5";
+      "square-5"
+      "square-4";
   }
 
   .square-1 h2 {

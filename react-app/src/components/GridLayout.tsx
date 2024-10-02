@@ -4,7 +4,7 @@ import ButtonSection from "./ButtonSection";
 function GridLayout() {
   return (
     <div className="container">
-      <div className="square-1">
+      <section id="home" className="square-1">
         <h2>Isaac D. Larson</h2>
         <div className="content">
           <p className="text-above-line">
@@ -13,29 +13,26 @@ function GridLayout() {
           <div className="line"></div>
         </div>
         <ButtonSection></ButtonSection>
-      </div>
+      </section>
       <div className="square-2">
         <div className="photo">
           <img src="/images/myImage.png" alt="me"></img>
         </div>
       </div>
-      <div className="square-3">
+      <section id="about" className="square-3">
         <h2>About Me</h2>
-        <div className="line2"></div>
+        <div className="line"></div>
         <p>
           Hi, I’m Isaac! I’m a dual major in Computer Science and Electrical
           Engineering at the University of Arizona. I’m eager to apply my skills
           to transformative, cutting-edge technologies that have the potential
           to make a lasting impact.
         </p>
-      </div>
-      <div className="square-5">
+      </section>
+      <section id="projects" className="square-5">
         <div className="projsquare-1">
-          <h1>
-            <img src="/images/prjImg.png" alt="logo" />
-            Projects
-          </h1>
-          <div className="line5"></div>
+          <h1>Projects</h1>
+          <div className="line"></div>
         </div>
         <div className="projsquare-2">
           <h3>My Portfolio</h3>
@@ -81,15 +78,12 @@ function GridLayout() {
         <div className="projsquare-5"></div>
         <div className="projsquare-6"></div>
         <div className="projsquare-7"></div>
-      </div>
+      </section>
 
-      <div className="square-6">
+      <section id="work" className="square-6">
         <div className="worksquare-1">
-          <h1>
-            <img src="/images/work.png" alt="logo" />
-            Work Experience
-          </h1>
-          <div className="line4"></div>
+          <h1>Work Experience</h1>
+          <div className="line"></div>
         </div>
         <div className="worksquare-2">
           <h3>Software Developer Intern - Aspera Satellite</h3>
@@ -176,7 +170,13 @@ function GridLayout() {
           </div>
           <img src="/images/dunkin_logo.png" alt="logo" />
         </div>
-      </div>
+      </section>
+      <section id="contact" className="square-4">
+        <h2>Contact Me!</h2>
+        <div className="line"></div>
+        <p>✉️ Email: ilarson@arizona.edu</p>
+        <p>📞 Phone: +1 219-299-0631 (Text or Call)</p>
+      </section>
     </div>
   );
 }
