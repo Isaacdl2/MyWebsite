@@ -16,7 +16,7 @@ function GridLayout() {
       </section>
       <div className="square-2">
         <div className="photo">
-          <img src="/images/myImage.png" alt="me"></img>
+          <img src="./images/myImage.png" alt="me"></img>
         </div>
       </div>
       <section id="about" className="square-3">
@@ -104,11 +104,11 @@ function GridLayout() {
             <span className="tag">SpiceyPy</span>
             <span className="tag">Testing</span>
           </div>
-          <img src="/images/ascending_node_logo.png" alt="logo" />
-          <img src="/images/nasa_logo.png" alt="logo" />
+          <img src="./images/ascending_node_logo.png" alt="logo" />
+          <img src="./images/nasa_logo.png" alt="logo" />
         </div>
         <div className="worksquare-3">
-          <img src="/images/aspera_Cropped.png"></img>
+          <img src="./images/aspera_Cropped.png"></img>
         </div>
         <div className="worksquare-4">
           <h3>Technical Consultant - University of Arizona</h3>
@@ -124,8 +124,8 @@ function GridLayout() {
             <span className="tag">Problem Solving</span>
             <span className="tag">Collaboration</span>
           </div>
-          <img src="/images/UA-LOGO.png" alt="logo" />
-          <img src="/images/uits.jpg" alt="logo" />
+          <img src="./images/UA-LOGO.png" alt="logo" />
+          <img src="./images/uits.jpg" alt="logo" />
         </div>
         <div className="worksquare-5">
           <h3>Math Tutor - Horizon High School</h3>
@@ -139,8 +139,8 @@ function GridLayout() {
             <span className="tag">Communication</span>
             <span className="tag">Problem Solving</span>
           </div>
-          <img src="/images/horizon_high_h.png" alt="logo" />
-          <img src="/images/horizon_high_dog.png" alt="logo" />
+          <img src="./images/horizon_high_h.png" alt="logo" />
+          <img src="./images/horizon_high_dog.png" alt="logo" />
         </div>
         <div className="worksquare-6">
           <h3>Assistant Youth Wrestling Coach - NPWC</h3>
@@ -168,7 +168,7 @@ function GridLayout() {
             <span className="tag">Multitasking</span>
             <span className="tag">Efficiency</span>
           </div>
-          <img src="/images/dunkin_logo.png" alt="logo" />
+          <img src="./images/dunkin_logo.png" alt="logo" />
         </div>
       </section>
       <section id="contact" className="square-4">

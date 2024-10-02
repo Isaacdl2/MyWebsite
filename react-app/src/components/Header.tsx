@@ -7,11 +7,11 @@ function Header() {
         <span className="header-text">Developer</span>
         <div className="navbarLogos">
           <a href="https://www.instagram.com/isaac.d.l/" target="_blank">
-            <img src="/images/logoT.png" alt="logo" className="logoT" />
+            <img src="./images/logoT.png" alt="logo" className="logoT" />
           </a>
           <a href="https://github.com/Isaacdl2" target="_blank">
             <img
-              src="/images/github_PNG40.png"
+              src="./images/github_PNG40.png"
               alt="GitHub"
               className="logoG"
             />

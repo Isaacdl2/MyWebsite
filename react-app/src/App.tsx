@@ -1,6 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import GridLayout from "./GridLayout";
-import Header from "./Header";
+import GridLayout from "./components/GridLayout";
+import Header from "./components/Header";
 
 function App() {
   return (
