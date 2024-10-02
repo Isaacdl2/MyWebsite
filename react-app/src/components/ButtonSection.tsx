@@ -11,7 +11,7 @@ function ButtonSection() {
         >
           <i className="fas fa-download"></i> Download CV
         </a>
-        <a href="tel:+1234567890" className="contact-button">
+        <a href="#contact" className="contact-button">
           <i className="fas fa-phone-alt"></i> Contact Me
         </a>
       </div>
