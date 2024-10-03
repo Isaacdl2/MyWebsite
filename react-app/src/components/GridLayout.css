@@ -424,12 +424,28 @@ body {
   .square-1 h2 {
     padding-top: 2rem; /* Padding between heading and line */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 8vw; /* Responsive font size */
+    font-size: 3rem; /* Responsive font size */
+    margin: 0; /* Remove default margin */
+  }
+
+  .square-1 p,
+  .square-4 p {
+    padding-top: 1rem; /* Padding between heading and line */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem; /* Responsive font size */
     margin: 0; /* Remove default margin */
   }
 
   .square-3 {
     min-height: 600px;
+  }
+
+  .square-3 h2 {
+    position: relative;
+    font: roboto;
+    font-size: 3rem; /* Responsive font size */
+    text-align: center;
+    padding-top: 2rem;
   }
 
   .square-3 p {
@@ -475,5 +491,19 @@ body {
 
   .square-6 p {
     font-size: 1rem;
+  }
+
+  .square-6 h1,
+  .square-5 h1,
+  .square-4 h2 {
+    position: relative;
+    font: roboto;
+    font-size: 3rem; /* Responsive font size */
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .square-4 {
+    padding-bottom: 100px;
   }
 }
