@@ -57,7 +57,7 @@ function GridLayout() {
         <div className="projsquare-4">
           <h3>Course Coding Projects</h3>
           <p>
-            My coding projects as University so far! Includes algorithm
+            My coding projects at University so far! Includes algorithm
             development, data strucutres, OOP, processing and analyzing large
             datasets, games, implementing digital circuits and lots more!&nbsp;
             <a
